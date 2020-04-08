@@ -48,3 +48,50 @@ Running this command should shown (almost at the end of the output):
 
 * The project is ready to be imported on the Eclipse IDE as an existen Maven project.
 
+# Project details
+
+## DB Properties
+* The details about the database should be written in the DB.properties, change the url if you run mysql in different port, if not specially configured 3306 is the mysql's default port.
+* give your corresponding root username and password, this is required as in test we would be required to connect to the database.
+
+```
+jdbc.initialSize=5
+jdbc.maxActive=10 
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/hellodb?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+jdbc.username=root
+jdbc.password=12345678
+```
+
+## Database Helper class
+
+* This class reads the database properties file and creates BasicDataSource object with which we can connect to the database and execute queries in it.
+
+## Test cases
+
+i) **setupTests**
+In this method we check whether we can connect to our database, if not we not proceed to the test case and we will exit saying that the before test condition is not met.
+
+ii) **loadData**
+In this method we write the data which we have in testdata.xml to our database. The contents of testdata.xml is in the following format
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="TEST">
+        <column>ID</column>
+        <column>NAME</column>
+        <column>VAL</column>
+
+        <row>
+            <value>999</value>
+            <value>HELLO</value>
+            <value>WORLD</value>
+        </row>
+      
+    </table>
+</dataset>
+```
+After writing data, we assert whether the data is there in the database.
+
+iii) **checkForData**
+In this test method we access the TEST table and print all of its contents.
