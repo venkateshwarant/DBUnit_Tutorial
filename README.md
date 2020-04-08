@@ -51,7 +51,7 @@ Running this command should shown (almost at the end of the output):
 # Project details
 
 ## DB Properties
-* The details about the database should be written in the DB.properties, change the url if you run mysql in different port, if not specially configured 3306 is the mysql's default port.
+* The details about the database should be written in the DB.properties, change the url if you run mysql in different port, if it is not specially configured then 3306 is the default port number.
 * give your corresponding root username and password, this is required as in test we would be required to connect to the database.
 
 ```
