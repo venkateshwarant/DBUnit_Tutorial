@@ -14,7 +14,7 @@ In this project we will test our database which we created in the helloworld pro
 * Check installation with the command `git --version`
 
 3. **Helloworld product**
-* Instruction to setup: https://github.com/acapozucca/helloworld/tree/master/product.helloworld
+* Instruction to setup: https://github.com/acapozucca/helloworld
 * This project needs this product to be deployed beforehand running any vagrant test.
 
 ## Set local working environment
