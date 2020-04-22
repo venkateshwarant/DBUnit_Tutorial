@@ -149,7 +149,7 @@ Connection set done!
 cd ~/<git_root_folder>/DBUnit_Tutorial/product.hellworld.testing.dbunit
 ```
 
-3.2- Run the comand.
+2- Run the comand:
 
 ```
 mvn clean test
@@ -164,8 +164,9 @@ Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------```
+[INFO] ------------------------------------------------------------------------
 
+```
 
 **Note**: the project is ready to be imported into the Eclipse IDE as an existen Maven project.
 
