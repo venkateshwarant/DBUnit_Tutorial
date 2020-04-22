@@ -2,7 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>product.hellworld.testing.dbunit</groupId>
   <artifactId>product.hellworld.testing.dbunit</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
+  
+    <properties>
+        <java.version>1.7</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+  
   
    <dependencies>
         <!-- Test -->
@@ -16,26 +22,29 @@
             <groupId>org.dbunit</groupId>
             <artifactId>dbunit</artifactId>
             <version>2.5.0</version>
-            <scope>src/test</scope>
         </dependency>
 
 
     <dependency>
 	   <groupId>mysql</groupId>
 	   <artifactId>mysql-connector-java</artifactId>
-	   <version>8.0.11</version>
-		</dependency>
-        <!-- DB Connection Pooling -->
-        <dependency>
+	   <version>5.1.6</version>
+	</dependency>
+		
+     <!-- DB Connection Pooling -->
+     <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>1.4</version>
-        </dependency>
-        <dependency>
+     </dependency>
+    
+     <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
-        </dependency>
+     </dependency>
+
+
 
 
     </dependencies>  
@@ -44,6 +53,7 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+    
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
@@ -52,6 +62,7 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      
     </plugins>
   </build>
 </project>

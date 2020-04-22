@@ -1,4 +1,4 @@
-package test;
+package test.java.example.dbunit;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>    
+     
+    <TEST ID='1' NAME='James' VAL='Bond' />
+ 
+    <TEST ID='2' NAME='Harry' VAL='Potter' />
+ 
+    <TEST ID='3' NAME='Rafael' VAL='Nadal' />
+    
+      <TEST ID="999" NAME="HELLO" VAL="WORLD"/>
+    
+</dataset>
